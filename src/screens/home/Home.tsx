@@ -5,7 +5,7 @@ import InputTodo from "../../components/InputTodo";
 import ListTodo from "../../components/ListTodo";
 
 function Home() {
-  console.log("render home");
+  // console.log("render home");
 
   return (
     <>
