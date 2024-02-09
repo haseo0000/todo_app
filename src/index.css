@@ -50,3 +50,11 @@ body {
   background: var(--bg-clr);
   color: var(--text-clr);
 }
+
+.text_ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  white-space: pre-wrap;
+}

@@ -34,8 +34,9 @@ function EditTodo() {
       <Typography variant="h2">Edit Todo</Typography>
       <Box>
         <Box
-          component={"input"}
-          type="text"
+          sx={{ width: "100%", resize: "none", fontSize: "1.5em" }}
+          component={"textarea"}
+          rows={5}
           placeholder="Add some todo..."
           value={editInput}
           onChange={(e) => setEditInput(e.target.value)}

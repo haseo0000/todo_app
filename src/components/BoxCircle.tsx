@@ -11,6 +11,7 @@ export function BoxCircle({ completed, id }: { completed: boolean; id: string })
     borderRadius: "50%",
     width: "25px",
     aspectRatio: "1",
+    flexShrink: "0",
   };
 
   const completedStyle = {

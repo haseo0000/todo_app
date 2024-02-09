@@ -30,6 +30,7 @@ function ListTodo() {
 
   const boxListStyles = {
     display: "flex",
+    alignItems: "center",
     justifyContent: "space-between",
     gap: "1rem",
     padding: "1rem",
@@ -85,7 +86,7 @@ function ListTodo() {
           {handleShowListTodo().map((todo) => (
             <Box sx={boxListStyles} key={todo.id}>
               <BoxCircle completed={todo.completed} id={todo.id} />
-              <Typography
+              <Box
                 component={"div"}
                 onClick={() => dispatch(toggleTodo({ id: todo.id }))}
                 className={`${todo.completed && styles.completed}`}
@@ -93,10 +94,10 @@ function ListTodo() {
                   cursor: "pointer",
                   flexGrow: "1",
                 }}>
-                <Typography component={"span"}>
+                <Typography component={"span"} className="text_ellipsis">
                   {todo.completed ? <s>{todo.title}</s> : <>{todo.title}</>}
                 </Typography>
-              </Typography>
+              </Box>
               {!todo.completed && <Link to={`/edit/${todo.id}`}>Edit</Link>}
               <BoxCross id={todo.id} />
             </Box>
