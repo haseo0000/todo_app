@@ -1,0 +1,13 @@
+.details_span:hover {
+  color: var(--text-clr);
+  cursor: pointer;
+}
+
+.completed {
+  color: var(--secondary-clr);
+}
+
+.active {
+  color: var(--text-clr);
+  font-weight: bold;
+}

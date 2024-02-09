@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-clr: #181824;
+  --text-clr: #ffffff;
+  --primary-clr: #25273c;
+  --secondary-clr: #62647b;
+  --shadow-box-clr: #000000;
+}
+
+.lightMode {
+  --bg-clr: #fafafa;
+  --text-clr: #181824;
+  --primary-clr: #ffffff;
+  --shadow-box-clr: #808080;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-clr);
+}
+
+a:hover {
+  color: var(--text-clr);
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 1rem 3rem;
+  font-size: 1em;
+  background: var(--primary-clr);
+  color: var(--text-clr);
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-clr);
+  color: var(--text-clr);
+}
